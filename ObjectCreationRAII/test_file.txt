@@ -1,0 +1,2 @@
+Testing RAII resource Management
+UConn Huskies won tonight!
