@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <iostream>
 #include <memory>
 #include <string>
@@ -39,7 +40,7 @@ public:
       cout << "Warning: " << managerId << " releasing previous configuration " << endl;
     }
     config = std::move(serverConfig);
-    cout << "Manager: " << managerId << " took ownership of " << config->getName() << endl; 
+    cout << "Manager: " << managerId << " took ownership of " << config->getName() << endl;
   }
 
   // Transfer ownership to another Manager
@@ -75,6 +76,15 @@ unique_ptr<ServerConfig> createServerConfig(const string& name, int port, const 
   return make_unique<ServerConfig>(name, port, env);
 }
 
+
+// Factory function returning unique_ptr - Factory abstraction pattern
+template <typename T, typename... Args>
+unique_ptr<T> createResource(Args &&...args) {
+    return make_unique<T>(std::forward<Args>(args)...);
+}
+
+
+
 int main(){
   cout << "=== Cloud Server Management System ===" << endl;
   // Create server configurations
@@ -89,15 +99,19 @@ int main(){
   ServerManager webManager("WEB-MGR-001");
   ServerManager dbManager("DB-MGR-001");
 
+  // Vector of unique_ptr for managing multiple servers
+  vector<unique_ptr<ServerConfig>> serverPool;
+  serverPool.push_back(createServerConfig("Server1", 8080, "Production"));
+
   // Assign exclusive ownership
   cout << "\n--- Assigning Exclusive Ownership ---" << endl;
   webManager.takeOwnership(std::move(webConfig));
   dbManager.takeOwnership(std::move(dbConfig));
 
-  // verify original pointers are now null 
+  // verify original pointers are now null
   cout << "original webconfig pointer is " << (webConfig ? "valid" : "null" ) << " after move" << endl;
   cout << "original dbConfig pointer is " << (dbConfig ? "valid" : "null" ) << " after move" << endl;
-  
+
   // Manage Servers
   cout << "\n--- Managing Servers ---" << endl;
   webManager.manageServer();
@@ -117,4 +131,3 @@ int main(){
   return 0;
 
 }
-
