@@ -40,12 +40,20 @@ public:
   DatabaseConnection(const DatabaseConnection &) = delete;
   DatabaseConnection &operator=(const DatabaseConnection &) = delete;
 
+  // Copy
+  DatabaseConnection(const DatabaseConnection& other) = delete;
+  DatabaseConnection &operator=(const DatabaseConnection &) = delete;
+
+
   // Enable move constructors for efficiency
   DatabaseConnection(DatabaseConnection &&other) noexcept
       : connectionString(other.connectionString),
         connectionId(other.connectionId), connected(other.connected) {
     other.connected = false;
   }
+
+  DatabaseConnection(DatabaseConnection&& other) noexcept : connectionId(other.connectionId) {}
+  DatabaseConnection &operator=(DatabaseConnection&& other) noexcept = delete;
 
   void query(const string& sql) {
     if (connected) {
