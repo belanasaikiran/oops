@@ -1,0 +1,3 @@
+[2026-03-03 16:10:40] INFO: Successful withdrawal: $200.000000 from account ACC001
+[2026-03-03 16:10:40] ERROR 1001: Insufficient funds: requested $400.000000, available $300.000000 | Context: Account: ACC001
+[2026-03-03 16:10:40] ERROR 1001: Insufficient funds: requested $600.000000, available $300.000000 | Context: Account: ACC001
