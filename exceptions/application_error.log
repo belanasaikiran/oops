@@ -1,0 +1,243 @@
+
+=== Application Error Log Session Started === 
+Timestamp: 2026-03-05 16:11:17.762
+==================================================
+[2026-03-05 16:11:17.762] [ERROR] [2026-03-05 16:11:17.762]FileErrorException (Code: 1003): File Error: File not found or access denied (File: valid_data.csv, Operation: open) | File: valid_data.csv | Operation: open | Context: Retry attempt 1 for file_load_valid_data.csv
+[2026-03-05 16:11:17.862] [ERROR] [2026-03-05 16:11:17.862]FileErrorException (Code: 1003): File Error: File not found or access denied (File: valid_data.csv, Operation: open) | File: valid_data.csv | Operation: open | Context: Retry attempt 2 for file_load_valid_data.csv
+[2026-03-05 16:11:18.263] [ERROR] [2026-03-05 16:11:18.262]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '1,name:John,email:john@example.com,age:25' violates rule: numeric value only | Field: numeric_field | Value: '1,name:John,email:john@example.com,age:25' | Rule: numeric value only | Context: Record #0
+[2026-03-05 16:11:18.263] [ERROR] [2026-03-05 16:11:18.262]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '1,name:John,email:john@example.com,age:25' violates rule: numeric value only | Field: numeric_field | Value: '1,name:John,email:john@example.com,age:25' | Rule: numeric value only | Context: Attempting validation error recovery
+[2026-03-05 16:11:18.263] [ERROR] [2026-03-05 16:11:18.263]ValidationError (Code: 2003): Validation Error: Field 'email' with value '2,name:Jane,email:jane-invalid-email,age:30' violates rule: valid email format | Field: email | Value: '2,name:Jane,email:jane-invalid-email,age:30' | Rule: valid email format | Context: Record #1
+[2026-03-05 16:11:18.263] [ERROR] [2026-03-05 16:11:18.263]ValidationError (Code: 2003): Validation Error: Field 'email' with value '2,name:Jane,email:jane-invalid-email,age:30' violates rule: valid email format | Field: email | Value: '2,name:Jane,email:jane-invalid-email,age:30' | Rule: valid email format | Context: Attempting validation error recovery
+[2026-03-05 16:11:18.263] [ERROR] [2026-03-05 16:11:18.263]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '3,name:Bob,email:bob@test.com,age:invalid_age' violates rule: numeric value only | Field: numeric_field | Value: '3,name:Bob,email:bob@test.com,age:invalid_age' | Rule: numeric value only | Context: Record #2
+[2026-03-05 16:11:18.263] [ERROR] [2026-03-05 16:11:18.263]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '3,name:Bob,email:bob@test.com,age:invalid_age' violates rule: numeric value only | Field: numeric_field | Value: '3,name:Bob,email:bob@test.com,age:invalid_age' | Rule: numeric value only | Context: Attempting validation error recovery
+[2026-03-05 16:11:18.263] [ERROR] [2026-03-05 16:11:18.263]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '4,name:Alice,email:alice@company.com,age:28' violates rule: numeric value only | Field: numeric_field | Value: '4,name:Alice,email:alice@company.com,age:28' | Rule: numeric value only | Context: Record #3
+[2026-03-05 16:11:18.263] [ERROR] [2026-03-05 16:11:18.263]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '4,name:Alice,email:alice@company.com,age:28' violates rule: numeric value only | Field: numeric_field | Value: '4,name:Alice,email:alice@company.com,age:28' | Rule: numeric value only | Context: Attempting validation error recovery
+[2026-03-05 16:11:18.263] [ERROR] [2026-03-05 16:11:18.263]ValidationError (Code: 2001): Validation Error: Field 'data' with value '' violates rule: non-empty | Field: data | Value: '' | Rule: non-empty | Context: Record #4
+[2026-03-05 16:11:18.263] [ERROR] [2026-03-05 16:11:18.263]ValidationError (Code: 2001): Validation Error: Field 'data' with value '' violates rule: non-empty | Field: data | Value: '' | Rule: non-empty | Context: Attempting validation error recovery
+[2026-03-05 16:11:18.263] [ERROR] [2026-03-05 16:11:18.263]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '5,name:Charlie,email:charlie@domain.com,age:35' violates rule: numeric value only | Field: numeric_field | Value: '5,name:Charlie,email:charlie@domain.com,age:35' | Rule: numeric value only | Context: Record #5
+[2026-03-05 16:11:18.263] [ERROR] [2026-03-05 16:11:18.263]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '5,name:Charlie,email:charlie@domain.com,age:35' violates rule: numeric value only | Field: numeric_field | Value: '5,name:Charlie,email:charlie@domain.com,age:35' | Rule: numeric value only | Context: Attempting validation error recovery
+[2026-03-05 16:11:18.763] [ERROR] [2026-03-05 16:11:18.763]FileErrorException (Code: 1001): File Error: Filename cannot be empty (File: , Operation: open) | File:  | Operation: open | Context: Retry attempt 1 for file_load_
+[2026-03-05 16:11:18.863] [ERROR] [2026-03-05 16:11:18.863]FileErrorException (Code: 1001): File Error: Filename cannot be empty (File: , Operation: open) | File:  | Operation: open | Context: Retry attempt 2 for file_load_
+[2026-03-05 16:11:19.264] [ERROR] [2026-03-05 16:11:19.264]FileErrorException (Code: 1001): File Error: Filename cannot be empty (File: , Operation: open) | File:  | Operation: open | Context: Retry attempt 3 for file_load_
+[2026-03-05 16:11:19.264] [ERROR] [2026-03-05 16:11:19.264]FileErrorException (Code: 1001): File Error: Filename cannot be empty (File: , Operation: open) | File:  | Operation: open | Context: File processing failed
+[2026-03-05 16:11:19.764] [ERROR] [2026-03-05 16:11:19.764]FileErrorException (Code: 1002): File Error: Unsupported file format (File: invalid.exe, Operation: open) | File: invalid.exe | Operation: open | Context: Retry attempt 1 for file_load_invalid.exe
+[2026-03-05 16:11:19.865] [ERROR] [2026-03-05 16:11:19.864]FileErrorException (Code: 1002): File Error: Unsupported file format (File: invalid.exe, Operation: open) | File: invalid.exe | Operation: open | Context: Retry attempt 2 for file_load_invalid.exe
+[2026-03-05 16:11:20.265] [ERROR] [2026-03-05 16:11:20.265]FileErrorException (Code: 1002): File Error: Unsupported file format (File: invalid.exe, Operation: open) | File: invalid.exe | Operation: open | Context: Retry attempt 3 for file_load_invalid.exe
+[2026-03-05 16:11:20.265] [ERROR] [2026-03-05 16:11:20.265]FileErrorException (Code: 1002): File Error: Unsupported file format (File: invalid.exe, Operation: open) | File: invalid.exe | Operation: open | Context: File processing failed
+[2026-03-05 16:11:20.765] [ERROR] [2026-03-05 16:11:20.765]FileErrorException (Code: 1003): File Error: File not found or access denied (File: missing_file.txt, Operation: open) | File: missing_file.txt | Operation: open | Context: Retry attempt 1 for file_load_missing_file.txt
+[2026-03-05 16:11:20.865] [ERROR] [2026-03-05 16:11:20.865]FileErrorException (Code: 1003): File Error: File not found or access denied (File: missing_file.txt, Operation: open) | File: missing_file.txt | Operation: open | Context: Retry attempt 2 for file_load_missing_file.txt
+[2026-03-05 16:11:21.266] [ERROR] [2026-03-05 16:11:21.266]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '1,name:John,email:john@example.com,age:25' violates rule: numeric value only | Field: numeric_field | Value: '1,name:John,email:john@example.com,age:25' | Rule: numeric value only | Context: Record #0
+[2026-03-05 16:11:21.266] [ERROR] [2026-03-05 16:11:21.266]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '1,name:John,email:john@example.com,age:25' violates rule: numeric value only | Field: numeric_field | Value: '1,name:John,email:john@example.com,age:25' | Rule: numeric value only | Context: Attempting validation error recovery
+[2026-03-05 16:11:21.266] [ERROR] [2026-03-05 16:11:21.266]ValidationError (Code: 2003): Validation Error: Field 'email' with value '2,name:Jane,email:jane-invalid-email,age:30' violates rule: valid email format | Field: email | Value: '2,name:Jane,email:jane-invalid-email,age:30' | Rule: valid email format | Context: Record #1
+[2026-03-05 16:11:21.266] [ERROR] [2026-03-05 16:11:21.266]ValidationError (Code: 2003): Validation Error: Field 'email' with value '2,name:Jane,email:jane-invalid-email,age:30' violates rule: valid email format | Field: email | Value: '2,name:Jane,email:jane-invalid-email,age:30' | Rule: valid email format | Context: Attempting validation error recovery
+[2026-03-05 16:11:21.266] [ERROR] [2026-03-05 16:11:21.266]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '3,name:Bob,email:bob@test.com,age:invalid_age' violates rule: numeric value only | Field: numeric_field | Value: '3,name:Bob,email:bob@test.com,age:invalid_age' | Rule: numeric value only | Context: Record #2
+[2026-03-05 16:11:21.266] [ERROR] [2026-03-05 16:11:21.266]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '3,name:Bob,email:bob@test.com,age:invalid_age' violates rule: numeric value only | Field: numeric_field | Value: '3,name:Bob,email:bob@test.com,age:invalid_age' | Rule: numeric value only | Context: Attempting validation error recovery
+[2026-03-05 16:11:21.266] [ERROR] [2026-03-05 16:11:21.266]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '4,name:Alice,email:alice@company.com,age:28' violates rule: numeric value only | Field: numeric_field | Value: '4,name:Alice,email:alice@company.com,age:28' | Rule: numeric value only | Context: Record #3
+[2026-03-05 16:11:21.266] [ERROR] [2026-03-05 16:11:21.266]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '4,name:Alice,email:alice@company.com,age:28' violates rule: numeric value only | Field: numeric_field | Value: '4,name:Alice,email:alice@company.com,age:28' | Rule: numeric value only | Context: Attempting validation error recovery
+[2026-03-05 16:11:21.266] [ERROR] [2026-03-05 16:11:21.266]ValidationError (Code: 2001): Validation Error: Field 'data' with value '' violates rule: non-empty | Field: data | Value: '' | Rule: non-empty | Context: Record #4
+[2026-03-05 16:11:21.266] [ERROR] [2026-03-05 16:11:21.266]ValidationError (Code: 2001): Validation Error: Field 'data' with value '' violates rule: non-empty | Field: data | Value: '' | Rule: non-empty | Context: Attempting validation error recovery
+[2026-03-05 16:11:21.266] [ERROR] [2026-03-05 16:11:21.266]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '5,name:Charlie,email:charlie@domain.com,age:35' violates rule: numeric value only | Field: numeric_field | Value: '5,name:Charlie,email:charlie@domain.com,age:35' | Rule: numeric value only | Context: Record #5
+[2026-03-05 16:11:21.266] [ERROR] [2026-03-05 16:11:21.266]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '5,name:Charlie,email:charlie@domain.com,age:35' violates rule: numeric value only | Field: numeric_field | Value: '5,name:Charlie,email:charlie@domain.com,age:35' | Rule: numeric value only | Context: Attempting validation error recovery
+[2026-03-05 16:11:21.766] [ERROR] [2026-03-05 16:11:21.766]FileErrorException (Code: 1003): File Error: File not found or access denied (File: corrupted_data.csv, Operation: open) | File: corrupted_data.csv | Operation: open | Context: Retry attempt 1 for file_load_corrupted_data.csv
+[2026-03-05 16:11:21.867] [ERROR] [2026-03-05 16:11:21.867]FileErrorException (Code: 1003): File Error: File not found or access denied (File: corrupted_data.csv, Operation: open) | File: corrupted_data.csv | Operation: open | Context: Retry attempt 2 for file_load_corrupted_data.csv
+[2026-03-05 16:11:22.267] [ERROR] [2026-03-05 16:11:22.267]FileErrorException (Code: 1004): File Error: File is corrupted or unreadable (File: corrupted_data.csv, Operation: read) | File: corrupted_data.csv | Operation: read | Context: Retry attempt 3 for file_load_corrupted_data.csv
+[2026-03-05 16:11:22.267] [ERROR] [2026-03-05 16:11:22.267]FileErrorException (Code: 1004): File Error: File is corrupted or unreadable (File: corrupted_data.csv, Operation: read) | File: corrupted_data.csv | Operation: read | Context: File processing failed
+
+=== Application Error Log Session Started ===
+Timestamp: 2026-03-05 16:11:43.879
+==================================================
+[2026-03-05 16:11:43.879] [INFO] Starting comprehensive error handling system demonstration
+[2026-03-05 16:11:43.880] [INFO] RecoveryManager initialized with max retries: 3
+[2026-03-05 16:11:43.880] [INFO] DataProcessor initialized
+[2026-03-05 16:11:43.880] [INFO] Starting comprehensive data processing for file: valid_data.csv
+[2026-03-05 16:11:43.880] [INFO] Created backup: valid_data.csv.backup_1772748703 for file: valid_data.csv
+[2026-03-05 16:11:43.880] [INFO] Starting retry operation: file_load_valid_data.csv
+[2026-03-05 16:11:43.880] [INFO] Attempt 1 of 3 for operation: file_load_valid_data.csv
+[2026-03-05 16:11:43.880] [INFO] Attempting to load data from file: valid_data.csv
+[2026-03-05 16:11:43.880] [ERROR] [2026-03-05 16:11:43.880] FileErrorException (Code: 1003): File Error: File not found or access denied (File: valid_data.csv, Operation: open) | File: valid_data.csv | Operation: open | Context: Retry attempt 1 for file_load_valid_data.csv
+[2026-03-05 16:11:43.880] [INFO] Waiting 100ms before retry
+[2026-03-05 16:11:43.980] [INFO] Attempt 2 of 3 for operation: file_load_valid_data.csv
+[2026-03-05 16:11:43.980] [INFO] Attempting to load data from file: valid_data.csv
+[2026-03-05 16:11:43.980] [INFO] File loaded successfully: valid_data.csv
+[2026-03-05 16:11:43.980] [INFO] Operation succeeded on attempt 2
+[2026-03-05 16:11:43.980] [INFO] Processing 6 data records
+[2026-03-05 16:11:43.980] [INFO] Validating data: id:1,name:John,email:john@example.com,age:25...
+[2026-03-05 16:11:43.980] [ERROR] [2026-03-05 16:11:43.980] ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '1,name:John,email:john@example.com,age:25' violates rule: numeric value only | Field: numeric_field | Value: '1,name:John,email:john@example.com,age:25' | Rule: numeric value only | Context: Record #0
+[2026-03-05 16:11:43.980] [ERROR] [2026-03-05 16:11:43.980] ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '1,name:John,email:john@example.com,age:25' violates rule: numeric value only | Field: numeric_field | Value: '1,name:John,email:john@example.com,age:25' | Rule: numeric value only | Context: Attempting validation error recovery
+[2026-03-05 16:11:43.980] [INFO] Auto-corrected non-numeric value '1,name:John,email:john@example.com,age:25' to: 1.25
+[2026-03-05 16:11:43.980] [INFO] Processing record: 1.25
+[2026-03-05 16:11:43.980] [INFO] Record processed successfully
+[2026-03-05 16:11:43.980] [INFO] Successfully recovered from validation error
+[2026-03-05 16:11:43.980] [INFO] Validating data: id:2,name:Jane,email:jane-invalid-email,age:30...
+[2026-03-05 16:11:43.980] [ERROR] [2026-03-05 16:11:43.980] ValidationError (Code: 2003): Validation Error: Field 'email' with value '2,name:Jane,email:jane-invalid-email,age:30' violates rule: valid email format | Field: email | Value: '2,name:Jane,email:jane-invalid-email,age:30' | Rule: valid email format | Context: Record #1
+[2026-03-05 16:11:43.980] [ERROR] [2026-03-05 16:11:43.980] ValidationError (Code: 2003): Validation Error: Field 'email' with value '2,name:Jane,email:jane-invalid-email,age:30' violates rule: valid email format | Field: email | Value: '2,name:Jane,email:jane-invalid-email,age:30' | Rule: valid email format | Context: Attempting validation error recovery
+[2026-03-05 16:11:43.980] [INFO] Auto-corrected email format: 2,name:Jane,email:jane-invalid-email,age:30@example.com
+[2026-03-05 16:11:43.981] [INFO] Processing record: 2,name:Jane,email:jane-invalid-email,age:30@example.com
+[2026-03-05 16:11:43.981] [WARNING] Recovery failed for record #1: Processing Error in stage 'validation': Record failed business rule validation
+[2026-03-05 16:11:43.981] [INFO] Validating data: id:3,name:Bob,email:bob@test.com,age:invalid_age...
+[2026-03-05 16:11:43.981] [ERROR] [2026-03-05 16:11:43.981] ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '3,name:Bob,email:bob@test.com,age:invalid_age' violates rule: numeric value only | Field: numeric_field | Value: '3,name:Bob,email:bob@test.com,age:invalid_age' | Rule: numeric value only | Context: Record #2
+[2026-03-05 16:11:43.981] [ERROR] [2026-03-05 16:11:43.981] ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '3,name:Bob,email:bob@test.com,age:invalid_age' violates rule: numeric value only | Field: numeric_field | Value: '3,name:Bob,email:bob@test.com,age:invalid_age' | Rule: numeric value only | Context: Attempting validation error recovery
+[2026-03-05 16:11:43.981] [INFO] Auto-corrected non-numeric value '3,name:Bob,email:bob@test.com,age:invalid_age' to: 3.
+[2026-03-05 16:11:43.981] [INFO] Processing record: 3.
+[2026-03-05 16:11:43.981] [WARNING] Recovery failed for record #2: Processing Error in stage 'transformation': Data transformation failed
+[2026-03-05 16:11:43.981] [INFO] Validating data: id:4,name:Alice,email:alice@company.com,age:28...
+[2026-03-05 16:11:43.981] [ERROR] [2026-03-05 16:11:43.981] ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '4,name:Alice,email:alice@company.com,age:28' violates rule: numeric value only | Field: numeric_field | Value: '4,name:Alice,email:alice@company.com,age:28' | Rule: numeric value only | Context: Record #3
+[2026-03-05 16:11:43.981] [ERROR] [2026-03-05 16:11:43.981] ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '4,name:Alice,email:alice@company.com,age:28' violates rule: numeric value only | Field: numeric_field | Value: '4,name:Alice,email:alice@company.com,age:28' | Rule: numeric value only | Context: Attempting validation error recovery
+[2026-03-05 16:11:43.981] [INFO] Auto-corrected non-numeric value '4,name:Alice,email:alice@company.com,age:28' to: 4.28
+[2026-03-05 16:11:43.981] [INFO] Processing record: 4.28
+[2026-03-05 16:11:43.981] [INFO] Record processed successfully
+[2026-03-05 16:11:43.981] [INFO] Successfully recovered from validation error
+[2026-03-05 16:11:43.981] [INFO] Validating data: ...
+[2026-03-05 16:11:43.981] [ERROR] [2026-03-05 16:11:43.981] ValidationError (Code: 2001): Validation Error: Field 'data' with value '' violates rule: non-empty | Field: data | Value: '' | Rule: non-empty | Context: Record #4
+[2026-03-05 16:11:43.981] [ERROR] [2026-03-05 16:11:43.981] ValidationError (Code: 2001): Validation Error: Field 'data' with value '' violates rule: non-empty | Field: data | Value: '' | Rule: non-empty | Context: Attempting validation error recovery
+[2026-03-05 16:11:43.981] [INFO] Auto-corrected empty field 'data' to: default_data
+[2026-03-05 16:11:43.981] [INFO] Processing record: default_data
+[2026-03-05 16:11:43.981] [WARNING] Recovery failed for record #4: Processing Error in stage 'transformation': Data transformation failed
+[2026-03-05 16:11:43.981] [INFO] Validating data: id:5,name:Charlie,email:charlie@domain.com,age:35...
+[2026-03-05 16:11:43.981] [ERROR] [2026-03-05 16:11:43.981] ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '5,name:Charlie,email:charlie@domain.com,age:35' violates rule: numeric value only | Field: numeric_field | Value: '5,name:Charlie,email:charlie@domain.com,age:35' | Rule: numeric value only | Context: Record #5
+[2026-03-05 16:11:43.981] [ERROR] [2026-03-05 16:11:43.981] ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '5,name:Charlie,email:charlie@domain.com,age:35' violates rule: numeric value only | Field: numeric_field | Value: '5,name:Charlie,email:charlie@domain.com,age:35' | Rule: numeric value only | Context: Attempting validation error recovery
+[2026-03-05 16:11:43.981] [INFO] Auto-corrected non-numeric value '5,name:Charlie,email:charlie@domain.com,age:35' to: 5.35
+[2026-03-05 16:11:43.981] [INFO] Processing record: 5.35
+[2026-03-05 16:11:43.981] [INFO] Record processed successfully
+[2026-03-05 16:11:43.981] [INFO] Successfully recovered from validation error
+[2026-03-05 16:11:43.981] [INFO] Processing completed. Records processed: 3, Total in output: 3
+[2026-03-05 16:11:44.481] [INFO] Starting comprehensive data processing for file: 
+[2026-03-05 16:11:44.481] [INFO] Created backup: .backup_1772748704 for file: 
+[2026-03-05 16:11:44.481] [INFO] Starting retry operation: file_load_
+[2026-03-05 16:11:44.481] [INFO] Attempt 1 of 3 for operation: file_load_
+[2026-03-05 16:11:44.481] [INFO] Attempting to load data from file: 
+[2026-03-05 16:11:44.481] [ERROR] [2026-03-05 16:11:44.481] FileErrorException (Code: 1001): File Error: Filename cannot be empty (File: , Operation: open) | File:  | Operation: open | Context: Retry attempt 1 for file_load_
+[2026-03-05 16:11:44.481] [INFO] Waiting 100ms before retry
+[2026-03-05 16:11:44.581] [INFO] Attempt 2 of 3 for operation: file_load_
+[2026-03-05 16:11:44.582] [INFO] Attempting to load data from file: 
+[2026-03-05 16:11:44.582] [ERROR] [2026-03-05 16:11:44.582] FileErrorException (Code: 1001): File Error: Filename cannot be empty (File: , Operation: open) | File:  | Operation: open | Context: Retry attempt 2 for file_load_
+[2026-03-05 16:11:44.582] [INFO] Waiting 400ms before retry
+[2026-03-05 16:11:44.982] [INFO] Attempt 3 of 3 for operation: file_load_
+[2026-03-05 16:11:44.982] [INFO] Attempting to load data from file: 
+[2026-03-05 16:11:44.982] [ERROR] [2026-03-05 16:11:44.982] FileErrorException (Code: 1001): File Error: Filename cannot be empty (File: , Operation: open) | File:  | Operation: open | Context: Retry attempt 3 for file_load_
+[2026-03-05 16:11:44.982] [CRITICAL] All retry attempts failed for operation: file_load_
+[2026-03-05 16:11:44.982] [ERROR] [2026-03-05 16:11:44.982] FileErrorException (Code: 1001): File Error: Filename cannot be empty (File: , Operation: open) | File:  | Operation: open | Context: File processing failed
+[2026-03-05 16:11:44.982] [INFO] Processing completed. Records processed: 3, Total in output: 3
+[2026-03-05 16:11:45.483] [INFO] Starting comprehensive data processing for file: invalid.exe
+[2026-03-05 16:11:45.483] [INFO] Created backup: invalid.exe.backup_1772748705 for file: invalid.exe
+[2026-03-05 16:11:45.483] [INFO] Starting retry operation: file_load_invalid.exe
+[2026-03-05 16:11:45.483] [INFO] Attempt 1 of 3 for operation: file_load_invalid.exe
+[2026-03-05 16:11:45.483] [INFO] Attempting to load data from file: invalid.exe
+[2026-03-05 16:11:45.483] [ERROR] [2026-03-05 16:11:45.483] FileErrorException (Code: 1002): File Error: Unsupported file format (File: invalid.exe, Operation: open) | File: invalid.exe | Operation: open | Context: Retry attempt 1 for file_load_invalid.exe
+[2026-03-05 16:11:45.483] [INFO] Waiting 100ms before retry
+[2026-03-05 16:11:45.583] [INFO] Attempt 2 of 3 for operation: file_load_invalid.exe
+[2026-03-05 16:11:45.583] [INFO] Attempting to load data from file: invalid.exe
+[2026-03-05 16:11:45.583] [ERROR] [2026-03-05 16:11:45.583] FileErrorException (Code: 1002): File Error: Unsupported file format (File: invalid.exe, Operation: open) | File: invalid.exe | Operation: open | Context: Retry attempt 2 for file_load_invalid.exe
+[2026-03-05 16:11:45.583] [INFO] Waiting 400ms before retry
+[2026-03-05 16:11:45.984] [INFO] Attempt 3 of 3 for operation: file_load_invalid.exe
+[2026-03-05 16:11:45.984] [INFO] Attempting to load data from file: invalid.exe
+[2026-03-05 16:11:45.984] [ERROR] [2026-03-05 16:11:45.984] FileErrorException (Code: 1002): File Error: Unsupported file format (File: invalid.exe, Operation: open) | File: invalid.exe | Operation: open | Context: Retry attempt 3 for file_load_invalid.exe
+[2026-03-05 16:11:45.984] [CRITICAL] All retry attempts failed for operation: file_load_invalid.exe
+[2026-03-05 16:11:45.984] [ERROR] [2026-03-05 16:11:45.984] FileErrorException (Code: 1002): File Error: Unsupported file format (File: invalid.exe, Operation: open) | File: invalid.exe | Operation: open | Context: File processing failed
+[2026-03-05 16:11:45.984] [INFO] Processing completed. Records processed: 3, Total in output: 3
+[2026-03-05 16:11:46.484] [INFO] Starting comprehensive data processing for file: missing_file.txt
+[2026-03-05 16:11:46.484] [INFO] Created backup: missing_file.txt.backup_1772748706 for file: missing_file.txt
+[2026-03-05 16:11:46.484] [INFO] Starting retry operation: file_load_missing_file.txt
+[2026-03-05 16:11:46.484] [INFO] Attempt 1 of 3 for operation: file_load_missing_file.txt
+[2026-03-05 16:11:46.484] [INFO] Attempting to load data from file: missing_file.txt
+[2026-03-05 16:11:46.484] [ERROR] [2026-03-05 16:11:46.484] FileErrorException (Code: 1003): File Error: File not found or access denied (File: missing_file.txt, Operation: open) | File: missing_file.txt | Operation: open | Context: Retry attempt 1 for file_load_missing_file.txt
+[2026-03-05 16:11:46.484] [INFO] Waiting 100ms before retry
+[2026-03-05 16:11:46.584] [INFO] Attempt 2 of 3 for operation: file_load_missing_file.txt
+[2026-03-05 16:11:46.584] [INFO] Attempting to load data from file: missing_file.txt
+[2026-03-05 16:11:46.584] [INFO] File loaded successfully: missing_file.txt
+[2026-03-05 16:11:46.584] [INFO] Operation succeeded on attempt 2
+[2026-03-05 16:11:46.584] [INFO] Processing 6 data records
+[2026-03-05 16:11:46.584] [INFO] Validating data: id:1,name:John,email:john@example.com,age:25...
+[2026-03-05 16:11:46.585] [ERROR] [2026-03-05 16:11:46.585] ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '1,name:John,email:john@example.com,age:25' violates rule: numeric value only | Field: numeric_field | Value: '1,name:John,email:john@example.com,age:25' | Rule: numeric value only | Context: Record #0
+[2026-03-05 16:11:46.585] [ERROR] [2026-03-05 16:11:46.585] ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '1,name:John,email:john@example.com,age:25' violates rule: numeric value only | Field: numeric_field | Value: '1,name:John,email:john@example.com,age:25' | Rule: numeric value only | Context: Attempting validation error recovery
+[2026-03-05 16:11:46.585] [INFO] Auto-corrected non-numeric value '1,name:John,email:john@example.com,age:25' to: 1.25
+[2026-03-05 16:11:46.585] [INFO] Processing record: 1.25
+[2026-03-05 16:11:46.585] [WARNING] Recovery failed for record #0: Processing Error in stage 'normalization': Failed to normalize record format
+[2026-03-05 16:11:46.585] [INFO] Validating data: id:2,name:Jane,email:jane-invalid-email,age:30...
+[2026-03-05 16:11:46.585] [ERROR] [2026-03-05 16:11:46.585] ValidationError (Code: 2003): Validation Error: Field 'email' with value '2,name:Jane,email:jane-invalid-email,age:30' violates rule: valid email format | Field: email | Value: '2,name:Jane,email:jane-invalid-email,age:30' | Rule: valid email format | Context: Record #1
+[2026-03-05 16:11:46.585] [ERROR] [2026-03-05 16:11:46.585] ValidationError (Code: 2003): Validation Error: Field 'email' with value '2,name:Jane,email:jane-invalid-email,age:30' violates rule: valid email format | Field: email | Value: '2,name:Jane,email:jane-invalid-email,age:30' | Rule: valid email format | Context: Attempting validation error recovery
+[2026-03-05 16:11:46.585] [INFO] Auto-corrected email format: 2,name:Jane,email:jane-invalid-email,age:30@example.com
+[2026-03-05 16:11:46.585] [INFO] Processing record: 2,name:Jane,email:jane-invalid-email,age:30@example.com
+[2026-03-05 16:11:46.585] [WARNING] Recovery failed for record #1: Processing Error in stage 'normalization': Failed to normalize record format
+[2026-03-05 16:11:46.585] [INFO] Validating data: id:3,name:Bob,email:bob@test.com,age:invalid_age...
+[2026-03-05 16:11:46.585] [ERROR] [2026-03-05 16:11:46.585] ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '3,name:Bob,email:bob@test.com,age:invalid_age' violates rule: numeric value only | Field: numeric_field | Value: '3,name:Bob,email:bob@test.com,age:invalid_age' | Rule: numeric value only | Context: Record #2
+[2026-03-05 16:11:46.585] [ERROR] [2026-03-05 16:11:46.585] ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '3,name:Bob,email:bob@test.com,age:invalid_age' violates rule: numeric value only | Field: numeric_field | Value: '3,name:Bob,email:bob@test.com,age:invalid_age' | Rule: numeric value only | Context: Attempting validation error recovery
+[2026-03-05 16:11:46.585] [INFO] Auto-corrected non-numeric value '3,name:Bob,email:bob@test.com,age:invalid_age' to: 3.
+[2026-03-05 16:11:46.585] [INFO] Processing record: 3.
+[2026-03-05 16:11:46.585] [WARNING] Recovery failed for record #2: Processing Error in stage 'normalization': Failed to normalize record format
+[2026-03-05 16:11:46.585] [INFO] Validating data: id:4,name:Alice,email:alice@company.com,age:28...
+[2026-03-05 16:11:46.585] [ERROR] [2026-03-05 16:11:46.585] ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '4,name:Alice,email:alice@company.com,age:28' violates rule: numeric value only | Field: numeric_field | Value: '4,name:Alice,email:alice@company.com,age:28' | Rule: numeric value only | Context: Record #3
+[2026-03-05 16:11:46.585] [ERROR] [2026-03-05 16:11:46.585] ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '4,name:Alice,email:alice@company.com,age:28' violates rule: numeric value only | Field: numeric_field | Value: '4,name:Alice,email:alice@company.com,age:28' | Rule: numeric value only | Context: Attempting validation error recovery
+[2026-03-05 16:11:46.585] [INFO] Auto-corrected non-numeric value '4,name:Alice,email:alice@company.com,age:28' to: 4.28
+[2026-03-05 16:11:46.585] [INFO] Processing record: 4.28
+[2026-03-05 16:11:46.585] [INFO] Record processed successfully
+[2026-03-05 16:11:46.585] [INFO] Successfully recovered from validation error
+[2026-03-05 16:11:46.585] [INFO] Validating data: ...
+[2026-03-05 16:11:46.585] [ERROR] [2026-03-05 16:11:46.585] ValidationError (Code: 2001): Validation Error: Field 'data' with value '' violates rule: non-empty | Field: data | Value: '' | Rule: non-empty | Context: Record #4
+[2026-03-05 16:11:46.585] [ERROR] [2026-03-05 16:11:46.585] ValidationError (Code: 2001): Validation Error: Field 'data' with value '' violates rule: non-empty | Field: data | Value: '' | Rule: non-empty | Context: Attempting validation error recovery
+[2026-03-05 16:11:46.585] [INFO] Auto-corrected empty field 'data' to: default_data
+[2026-03-05 16:11:46.585] [INFO] Processing record: default_data
+[2026-03-05 16:11:46.585] [INFO] Record processed successfully
+[2026-03-05 16:11:46.585] [INFO] Successfully recovered from validation error
+[2026-03-05 16:11:46.585] [INFO] Validating data: id:5,name:Charlie,email:charlie@domain.com,age:35...
+[2026-03-05 16:11:46.585] [ERROR] [2026-03-05 16:11:46.585] ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '5,name:Charlie,email:charlie@domain.com,age:35' violates rule: numeric value only | Field: numeric_field | Value: '5,name:Charlie,email:charlie@domain.com,age:35' | Rule: numeric value only | Context: Record #5
+[2026-03-05 16:11:46.585] [ERROR] [2026-03-05 16:11:46.585] ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '5,name:Charlie,email:charlie@domain.com,age:35' violates rule: numeric value only | Field: numeric_field | Value: '5,name:Charlie,email:charlie@domain.com,age:35' | Rule: numeric value only | Context: Attempting validation error recovery
+[2026-03-05 16:11:46.585] [INFO] Auto-corrected non-numeric value '5,name:Charlie,email:charlie@domain.com,age:35' to: 5.35
+[2026-03-05 16:11:46.585] [INFO] Processing record: 5.35
+[2026-03-05 16:11:46.585] [WARNING] Recovery failed for record #5: Processing Error in stage 'normalization': Failed to normalize record format
+[2026-03-05 16:11:46.585] [INFO] Processing completed. Records processed: 5, Total in output: 5
+[2026-03-05 16:11:47.085] [INFO] Starting comprehensive data processing for file: corrupted_data.csv
+[2026-03-05 16:11:47.086] [INFO] Created backup: corrupted_data.csv.backup_1772748707 for file: corrupted_data.csv
+[2026-03-05 16:11:47.086] [INFO] Starting retry operation: file_load_corrupted_data.csv
+[2026-03-05 16:11:47.086] [INFO] Attempt 1 of 3 for operation: file_load_corrupted_data.csv
+[2026-03-05 16:11:47.086] [INFO] Attempting to load data from file: corrupted_data.csv
+[2026-03-05 16:11:47.086] [ERROR] [2026-03-05 16:11:47.086] FileErrorException (Code: 1004): File Error: File is corrupted or unreadable (File: corrupted_data.csv, Operation: read) | File: corrupted_data.csv | Operation: read | Context: Retry attempt 1 for file_load_corrupted_data.csv
+[2026-03-05 16:11:47.086] [INFO] Waiting 100ms before retry
+[2026-03-05 16:11:47.186] [INFO] Attempt 2 of 3 for operation: file_load_corrupted_data.csv
+[2026-03-05 16:11:47.186] [INFO] Attempting to load data from file: corrupted_data.csv
+[2026-03-05 16:11:47.186] [ERROR] [2026-03-05 16:11:47.186] FileErrorException (Code: 1003): File Error: File not found or access denied (File: corrupted_data.csv, Operation: open) | File: corrupted_data.csv | Operation: open | Context: Retry attempt 2 for file_load_corrupted_data.csv
+[2026-03-05 16:11:47.186] [INFO] Waiting 400ms before retry
+[2026-03-05 16:11:47.587] [INFO] Attempt 3 of 3 for operation: file_load_corrupted_data.csv
+[2026-03-05 16:11:47.587] [INFO] Attempting to load data from file: corrupted_data.csv
+[2026-03-05 16:11:47.587] [ERROR] [2026-03-05 16:11:47.587] FileErrorException (Code: 1004): File Error: File is corrupted or unreadable (File: corrupted_data.csv, Operation: read) | File: corrupted_data.csv | Operation: read | Context: Retry attempt 3 for file_load_corrupted_data.csv
+[2026-03-05 16:11:47.587] [CRITICAL] All retry attempts failed for operation: file_load_corrupted_data.csv
+[2026-03-05 16:11:47.587] [ERROR] [2026-03-05 16:11:47.587] FileErrorException (Code: 1004): File Error: File is corrupted or unreadable (File: corrupted_data.csv, Operation: read) | File: corrupted_data.csv | Operation: read | Context: File processing failed
+[2026-03-05 16:11:47.587] [INFO] Processing completed. Records processed: 5, Total in output: 5
+[2026-03-05 16:11:48.088] [INFO] Comprehensive error handling demonstration completed
+
+=== Application Error Log Session Started === 
+Timestamp: 2026-03-05 16:12:05.619
+==================================================
+[2026-03-05 16:12:05.619] [ERROR] [2026-03-05 16:12:05.619]FileErrorException (Code: 1004): File Error: File is corrupted or unreadable (File: valid_data.csv, Operation: read) | File: valid_data.csv | Operation: read | Context: Retry attempt 1 for file_load_valid_data.csv
+[2026-03-05 16:12:05.719] [ERROR] [2026-03-05 16:12:05.719]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '1,name:John,email:john@example.com,age:25' violates rule: numeric value only | Field: numeric_field | Value: '1,name:John,email:john@example.com,age:25' | Rule: numeric value only | Context: Record #0
+[2026-03-05 16:12:05.719] [ERROR] [2026-03-05 16:12:05.719]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '1,name:John,email:john@example.com,age:25' violates rule: numeric value only | Field: numeric_field | Value: '1,name:John,email:john@example.com,age:25' | Rule: numeric value only | Context: Attempting validation error recovery
+[2026-03-05 16:12:05.719] [ERROR] [2026-03-05 16:12:05.719]ValidationError (Code: 2003): Validation Error: Field 'email' with value '2,name:Jane,email:jane-invalid-email,age:30' violates rule: valid email format | Field: email | Value: '2,name:Jane,email:jane-invalid-email,age:30' | Rule: valid email format | Context: Record #1
+[2026-03-05 16:12:05.719] [ERROR] [2026-03-05 16:12:05.719]ValidationError (Code: 2003): Validation Error: Field 'email' with value '2,name:Jane,email:jane-invalid-email,age:30' violates rule: valid email format | Field: email | Value: '2,name:Jane,email:jane-invalid-email,age:30' | Rule: valid email format | Context: Attempting validation error recovery
+[2026-03-05 16:12:05.719] [ERROR] [2026-03-05 16:12:05.719]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '3,name:Bob,email:bob@test.com,age:invalid_age' violates rule: numeric value only | Field: numeric_field | Value: '3,name:Bob,email:bob@test.com,age:invalid_age' | Rule: numeric value only | Context: Record #2
+[2026-03-05 16:12:05.719] [ERROR] [2026-03-05 16:12:05.719]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '3,name:Bob,email:bob@test.com,age:invalid_age' violates rule: numeric value only | Field: numeric_field | Value: '3,name:Bob,email:bob@test.com,age:invalid_age' | Rule: numeric value only | Context: Attempting validation error recovery
+[2026-03-05 16:12:05.719] [ERROR] [2026-03-05 16:12:05.719]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '4,name:Alice,email:alice@company.com,age:28' violates rule: numeric value only | Field: numeric_field | Value: '4,name:Alice,email:alice@company.com,age:28' | Rule: numeric value only | Context: Record #3
+[2026-03-05 16:12:05.719] [ERROR] [2026-03-05 16:12:05.719]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '4,name:Alice,email:alice@company.com,age:28' violates rule: numeric value only | Field: numeric_field | Value: '4,name:Alice,email:alice@company.com,age:28' | Rule: numeric value only | Context: Attempting validation error recovery
+[2026-03-05 16:12:05.719] [ERROR] [2026-03-05 16:12:05.719]ValidationError (Code: 2001): Validation Error: Field 'data' with value '' violates rule: non-empty | Field: data | Value: '' | Rule: non-empty | Context: Record #4
+[2026-03-05 16:12:05.720] [ERROR] [2026-03-05 16:12:05.719]ValidationError (Code: 2001): Validation Error: Field 'data' with value '' violates rule: non-empty | Field: data | Value: '' | Rule: non-empty | Context: Attempting validation error recovery
+[2026-03-05 16:12:05.720] [ERROR] [2026-03-05 16:12:05.720]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '5,name:Charlie,email:charlie@domain.com,age:35' violates rule: numeric value only | Field: numeric_field | Value: '5,name:Charlie,email:charlie@domain.com,age:35' | Rule: numeric value only | Context: Record #5
+[2026-03-05 16:12:05.720] [ERROR] [2026-03-05 16:12:05.720]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '5,name:Charlie,email:charlie@domain.com,age:35' violates rule: numeric value only | Field: numeric_field | Value: '5,name:Charlie,email:charlie@domain.com,age:35' | Rule: numeric value only | Context: Attempting validation error recovery
+[2026-03-05 16:12:06.220] [ERROR] [2026-03-05 16:12:06.220]FileErrorException (Code: 1001): File Error: Filename cannot be empty (File: , Operation: open) | File:  | Operation: open | Context: Retry attempt 1 for file_load_
+[2026-03-05 16:12:06.321] [ERROR] [2026-03-05 16:12:06.320]FileErrorException (Code: 1001): File Error: Filename cannot be empty (File: , Operation: open) | File:  | Operation: open | Context: Retry attempt 2 for file_load_
+[2026-03-05 16:12:06.721] [ERROR] [2026-03-05 16:12:06.721]FileErrorException (Code: 1001): File Error: Filename cannot be empty (File: , Operation: open) | File:  | Operation: open | Context: Retry attempt 3 for file_load_
+[2026-03-05 16:12:06.721] [ERROR] [2026-03-05 16:12:06.721]FileErrorException (Code: 1001): File Error: Filename cannot be empty (File: , Operation: open) | File:  | Operation: open | Context: File processing failed
+[2026-03-05 16:12:07.221] [ERROR] [2026-03-05 16:12:07.221]FileErrorException (Code: 1002): File Error: Unsupported file format (File: invalid.exe, Operation: open) | File: invalid.exe | Operation: open | Context: Retry attempt 1 for file_load_invalid.exe
+[2026-03-05 16:12:07.321] [ERROR] [2026-03-05 16:12:07.321]FileErrorException (Code: 1002): File Error: Unsupported file format (File: invalid.exe, Operation: open) | File: invalid.exe | Operation: open | Context: Retry attempt 2 for file_load_invalid.exe
+[2026-03-05 16:12:07.722] [ERROR] [2026-03-05 16:12:07.722]FileErrorException (Code: 1002): File Error: Unsupported file format (File: invalid.exe, Operation: open) | File: invalid.exe | Operation: open | Context: Retry attempt 3 for file_load_invalid.exe
+[2026-03-05 16:12:07.722] [ERROR] [2026-03-05 16:12:07.722]FileErrorException (Code: 1002): File Error: Unsupported file format (File: invalid.exe, Operation: open) | File: invalid.exe | Operation: open | Context: File processing failed
+[2026-03-05 16:12:08.222] [ERROR] [2026-03-05 16:12:08.222]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '1,name:John,email:john@example.com,age:25' violates rule: numeric value only | Field: numeric_field | Value: '1,name:John,email:john@example.com,age:25' | Rule: numeric value only | Context: Record #0
+[2026-03-05 16:12:08.222] [ERROR] [2026-03-05 16:12:08.222]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '1,name:John,email:john@example.com,age:25' violates rule: numeric value only | Field: numeric_field | Value: '1,name:John,email:john@example.com,age:25' | Rule: numeric value only | Context: Attempting validation error recovery
+[2026-03-05 16:12:08.222] [ERROR] [2026-03-05 16:12:08.222]ValidationError (Code: 2003): Validation Error: Field 'email' with value '2,name:Jane,email:jane-invalid-email,age:30' violates rule: valid email format | Field: email | Value: '2,name:Jane,email:jane-invalid-email,age:30' | Rule: valid email format | Context: Record #1
+[2026-03-05 16:12:08.222] [ERROR] [2026-03-05 16:12:08.222]ValidationError (Code: 2003): Validation Error: Field 'email' with value '2,name:Jane,email:jane-invalid-email,age:30' violates rule: valid email format | Field: email | Value: '2,name:Jane,email:jane-invalid-email,age:30' | Rule: valid email format | Context: Attempting validation error recovery
+[2026-03-05 16:12:08.222] [ERROR] [2026-03-05 16:12:08.222]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '3,name:Bob,email:bob@test.com,age:invalid_age' violates rule: numeric value only | Field: numeric_field | Value: '3,name:Bob,email:bob@test.com,age:invalid_age' | Rule: numeric value only | Context: Record #2
+[2026-03-05 16:12:08.222] [ERROR] [2026-03-05 16:12:08.222]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '3,name:Bob,email:bob@test.com,age:invalid_age' violates rule: numeric value only | Field: numeric_field | Value: '3,name:Bob,email:bob@test.com,age:invalid_age' | Rule: numeric value only | Context: Attempting validation error recovery
+[2026-03-05 16:12:08.223] [ERROR] [2026-03-05 16:12:08.222]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '4,name:Alice,email:alice@company.com,age:28' violates rule: numeric value only | Field: numeric_field | Value: '4,name:Alice,email:alice@company.com,age:28' | Rule: numeric value only | Context: Record #3
+[2026-03-05 16:12:08.223] [ERROR] [2026-03-05 16:12:08.222]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '4,name:Alice,email:alice@company.com,age:28' violates rule: numeric value only | Field: numeric_field | Value: '4,name:Alice,email:alice@company.com,age:28' | Rule: numeric value only | Context: Attempting validation error recovery
+[2026-03-05 16:12:08.223] [ERROR] [2026-03-05 16:12:08.223]ValidationError (Code: 2001): Validation Error: Field 'data' with value '' violates rule: non-empty | Field: data | Value: '' | Rule: non-empty | Context: Record #4
+[2026-03-05 16:12:08.223] [ERROR] [2026-03-05 16:12:08.223]ValidationError (Code: 2001): Validation Error: Field 'data' with value '' violates rule: non-empty | Field: data | Value: '' | Rule: non-empty | Context: Attempting validation error recovery
+[2026-03-05 16:12:08.223] [ERROR] [2026-03-05 16:12:08.223]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '5,name:Charlie,email:charlie@domain.com,age:35' violates rule: numeric value only | Field: numeric_field | Value: '5,name:Charlie,email:charlie@domain.com,age:35' | Rule: numeric value only | Context: Record #5
+[2026-03-05 16:12:08.223] [ERROR] [2026-03-05 16:12:08.223]ValidationError (Code: 2004): Validation Error: Field 'numeric_field' with value '5,name:Charlie,email:charlie@domain.com,age:35' violates rule: numeric value only | Field: numeric_field | Value: '5,name:Charlie,email:charlie@domain.com,age:35' | Rule: numeric value only | Context: Attempting validation error recovery
